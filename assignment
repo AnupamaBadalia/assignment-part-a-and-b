@@ -1,0 +1,26 @@
+Part-A
+Question.Write a function that takes a list of strings and prints them, in a rectangular frame. 
+1.Find reverse of string
+2.Check if reverse and original are same or not
+def isPalindrome(s):
+return s == s[::-1]
+s = 'malayalam'
+ans = isPalindrome(s)
+if ans:
+   print('Yes')
+else:
+   print('No')
+
+Part-B
+Question.Develop a python program which prints cube sum of first n natural numbers(Nis user defined).
+# take any integer of value n
+n=int(input('value of n='))
+#for cube of natural numbers 
+a=[x**3 for x in range(n)]
+#initial value
+total=0
+#for loop
+for i in a:
+    total=total+i
+print(total)
+value of n=10
